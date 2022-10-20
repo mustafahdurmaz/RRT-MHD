@@ -31,7 +31,7 @@ class Main:
 
         self.screen = pygame.display.set_mode((self.screen_w, self.screen_h))
 
-        time = pygame.time.Clock()
+        #time = pygame.time.Clock()
         running = True
         
         while running:
@@ -73,7 +73,7 @@ class Main:
 
             pygame.display.update()
             pygame.display.flip()
-            time.tick(200)
+            #time.tick(200)
     
     def draw(self):
         if self.initial_point != None:
@@ -107,5 +107,5 @@ class Main:
             self.end_point.prevp=p
             self.allpoints.append(self.end_point)
             
-app= Main()
+app=Main()
 app.loop()        
