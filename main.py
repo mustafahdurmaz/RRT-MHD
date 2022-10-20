@@ -43,6 +43,7 @@ class Main:
                     running = False
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if event.button == LEFT:
+                        self.RRT_end = False
                         x,y=pygame.mouse.get_pos()
                         self.initial_point=Point(x,y,None)
                         self.allpoints=[self.initial_point]
@@ -50,7 +51,7 @@ class Main:
                         
                     if event.button == RIGHT:
                         #pygame.draw.line(self.screen,BLUE,(50,60),(120,190),2)
-
+                        self.RRT_end = False
                         x,y=pygame.mouse.get_pos()
                         self.end_point=Point(x,y,None)
 
